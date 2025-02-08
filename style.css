@@ -51,8 +51,7 @@ section {
 .profile-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 40px; /* Space between image and content */
 }
 
