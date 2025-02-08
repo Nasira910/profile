@@ -8,32 +8,20 @@ body {
     padding: 0;
 }
 
+/* Header Styling */
 header {
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg'); /* Same background image */
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
     text-align: center; 
-    background-repeat: no-repeat;
     padding: 20px;
 }
-
 
 header h1 {
     font-size: 3em;
     font-weight: 700;
-    color: black;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-nav a {
-    font-size: 1.2em;
-    color: #f0f0f0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-/* Navigation Links Hover Effect */
-nav a:hover {
-    color: #ff7e5f;
 }
 
 /* Navigation Links */
@@ -48,7 +36,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -70,28 +58,22 @@ section {
 }
 
 .profile-photo {
-    width: 400px; /* Set width of the rectangle */
-    height: 450px; /* Set height of the rectangle */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    border-radius: 50%; /* Make it circular */
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border: 5px solid transparent;
-    background-image: linear-gradient(white, white), url('images/my-photo.jpg');
-    border: 5px solid white; /* White border */
-    background-clip: content-box, border-box;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Light shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 /* Hover effect on profile photo */
 .profile-photo:hover {
-    border: 5px solid #ff7e5f; /* Glowing border */
-    transform: scale(1.1); /* Slightly zoom the image */
+    border: 5px solid #ff7e5f;
+    transform: scale(1.1);
     filter: grayscale(0%);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Add shadow around the image */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-
 
 /* Bio text styling */
 .bio {
