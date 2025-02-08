@@ -1,6 +1,6 @@
 /* Apply background image to the entire page */
 body {
-    background: url('https://images.app.goo.gl/JgWp4uxHkMbSknHQ7') no-repeat center center/cover;
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg') no-repeat center center/cover;
     background-attachment: fixed; /* Keeps background fixed while scrolling */
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -10,7 +10,7 @@ body {
 
 
 header {
-    background-image: url('https://images.app.goo.gl/JgWp4uxHkMbSknHQ7'); /* Same background image */
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg'); /* Same background image */
     background-size: cover;
     background-position: center;
     text-align: center; 
