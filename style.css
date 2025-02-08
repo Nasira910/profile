@@ -1,16 +1,13 @@
 /* Apply background image to the entire page */
 body {
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('https://images.app.goo.gl/JgWp4uxHkMbSknHQ7') no-repeat center center/cover;
     background-attachment: fixed; /* Keeps background fixed while scrolling */
-    color: black; /* Ensures text is visible */
-    font-family: Arial;sans-serif;
+    color: black;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-
 }
+
 
 header {
     background-image: url('background.jpg'); /* Same background image */
