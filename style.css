@@ -47,17 +47,18 @@ section {
     width: 80%;
 }
 
-/* About Section */
+/* About Section - Flexbox for side by side layout */
 .profile-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 40px; /* Space between image and content */
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid white;
@@ -71,6 +72,15 @@ section {
     transform: scale(1.1);
     filter: grayscale(0%);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Bio text styling */
+.bio {
+    max-width: 600px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+    text-align: left;
 }
 
 /* Projects Section */
