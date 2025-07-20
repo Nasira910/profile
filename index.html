@@ -5,8 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasira's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 30px 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .submit-btn {
+            padding: 12px 20px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #1c5980;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Nasira's Portfolio</h1>
         <nav>
@@ -40,23 +102,27 @@
             <h2>Contact Me</h2>
             <p>If you'd like to get in touch, please fill out the form below:</p>
             <form action="https://formsubmit.co/patannasira@gmail.com" method="POST">
-                <!-- Add required hidden input for FormSubmit -->
+                <!-- FormSubmit Configuration -->
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio">
+                <input type="hidden" name="_next" value="https://example.com/thankyou.html">
 
                 <div class="form-group">
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
+
                 <div class="form-group">
                     <label for="email">Your Email:</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
+
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
                 </div>
+
                 <button type="submit" class="submit-btn">Submit</button>
             </form>
         </div>
@@ -65,5 +131,6 @@
     <footer>
         <p>&copy; 2025 Nasira's Portfolio. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
