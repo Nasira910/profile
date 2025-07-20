@@ -32,11 +32,7 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-section {
+.slide {
   padding: 3rem 2rem;
   text-align: center;
 }
@@ -49,23 +45,16 @@ section {
   background-color: #fefefe;
 }
 
-#projects .project {
-  margin: 1.5rem auto;
+.project {
+  margin: 1rem 0;
   padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  max-width: 600px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-bottom: 1px solid #ddd;
 }
 
-#projects .project h3 {
-  color: #333;
-}
-
-#contact {
+.contact-section {
   background: url('https://www.transparenttextures.com/patterns/cubes.png'), #000;
   color: white;
+  padding: 2rem 0;
 }
 
 .container {
@@ -78,18 +67,17 @@ section {
 
 form {
   margin-top: 1rem;
-  text-align: left;
 }
 
 .form-group {
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 label {
   display: block;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  font-weight: bold;
 }
 
 input[type="text"],
