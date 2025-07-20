@@ -1,130 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nasira's Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f5f5f5;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #000;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .slide {
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    #about {
-      background: linear-gradient(to right, #f9f9f9, #e0e0e0);
-    }
-
-    #projects {
-      background-color: #fefefe;
-    }
-
-    .project {
-      margin: 1rem 0;
-      padding: 1rem;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .contact-section {
-      background: url('https://www.transparenttextures.com/patterns/cubes.png'), #000;
-      color: white;
-      padding: 2rem 0;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 10px;
-    }
-
-    form {
-      margin-top: 1rem;
-    }
-
-    .form-group {
-      margin-bottom: 1.5rem;
-      text-align: left;
-    }
-
-    label {
-      display: block;
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 0.7rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    textarea {
-      height: 100px;
-      resize: none;
-    }
-
-    .submit-btn {
-      padding: 0.8rem 1.5rem;
-      background-color: #ff9c00;
-      color: black;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .submit-btn:hover {
-      background-color: #ffb833;
-    }
-
-    footer {
-      background-color: #000;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -141,51 +21,50 @@
 
   <section id="about" class="slide">
     <h2>About Me</h2>
-    <p>Hello! I'm Nasira, a budding web developer passionate about learning new technologies and creating impactful digital experiences.</p>
+    <p>Welcome to my portfolio! I'm Nasira, a budding web developer passionate about learning new technologies.</p>
   </section>
 
   <section id="projects" class="slide">
     <h2>Projects</h2>
     <div class="project">
-      <h3>Blood Cell Classification</h3>
-      <p>Using transfer learning to classify blood cell images. [<a href="https://github.com/Nasira19/blood-cell-classification" target="_blank">View on GitHub</a>]</p>
+      <h3>Grid-based Problem Solving</h3>
+      <p>Minimum moves required from source to destination using specific rules.</p>
     </div>
     <div class="project">
-      <h3>Smart Retail Cart System</h3>
-      <p>An IoT-based smart cart with Android app and Firebase for Walmart Sparkathon.</p>
+      <h3>DT Project-based Learning</h3>
+      <p>A concept for first-year students combining coding, leadership, and business strategy.</p>
     </div>
   </section>
 
-  <section id="contact" class="contact-section">
+  <section id="contact" class="contact-section slide">
+    <h2>Contact Me</h2>
     <div class="container">
-      <h2>Contact Me</h2>
-      <form target="_blank" action="https://formsubmit.co/nasira2433@gmail.com" method="POST">
-        <!-- Hidden field to set email subject -->
-        <input type="hidden" name="_subject" value="New message from Nasira's Portfolio">
+      <form action="https://formsubmit.co/el/joyuko" method="POST">
+        <!-- Optional settings -->
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New message from portfolio!">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
 
         <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="col">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+          </div>
         </div>
-
         <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          <textarea name="message" class="form-control" rows="10" placeholder="Your Message" required></textarea>
         </div>
-
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
-        </div>
-
         <button type="submit" class="submit-btn">Submit</button>
       </form>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Nasira. All rights reserved.</p>
+    <p>&copy; 2025 Nasira. All rights reserved.</p>
   </footer>
 
 </body>
