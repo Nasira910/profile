@@ -1,74 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nasira's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasira's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Nasira's Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Nasira's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="about" class="slide">
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm <strong>Nasira</strong>, a passionate and creative web developer currently pursuing my B.Tech. I love creating clean, responsive websites and solving real-world problems through code. I'm eager to learn, grow, and contribute meaningfully to impactful projects.
-    </p>
-  </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I'm Nasira, a passionate web developer exploring interactive and user-friendly designs.</p>
+    </section>
 
-  <section id="projects" class="slide">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1: Grid Solver</h3>
-      <p>A Python-based solution that efficiently navigates grid structures based on movement rules to find minimum paths.</p>
-    </div>
-    <div class="project">
-      <h3>Project 2: DT Learning</h3>
-      <p>Designed a project-based learning framework that combines design thinking, behavioral insights, and strategy for students.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="slide contact-section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you'd like to get in touch, please fill out the form below:</p>
-      <form action="https://formsubmit.co/patannasira@gmail.com" method="POST">
-        <!-- Hidden fields required by FormSubmit -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="New Contact Form Submission">
-
-        <div class="form-group">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required />
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Project 1: Grid Solver</h3>
+            <p>Solving grid-based problems efficiently.</p>
         </div>
-
-        <div class="form-group">
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required />
+        <div>
+            <h3>Project 2: DT Learning</h3>
+            <p>Innovative project-based learning for students.</p>
         </div>
+    </section>
 
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, please fill out the form below:</p>
+            <form action="https://formsubmit.co/el/sibate" method="POST">
+                <!-- Hidden fields required by FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
         </div>
+    </section>
 
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Nasira's Portfolio. All Rights Reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Nasira's Portfolio. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
