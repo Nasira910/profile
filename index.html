@@ -2,70 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nasira's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      max-width: 600px;
+      margin-top: 50px;
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    button {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Contact Me</h1>
+    <form action="https://formsubmit.co/nasira2433@gmail.com" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" class="form-control" placeholder="Your Message" rows="6" required></textarea>
+      </div>
 
-  <header>
-    <h1>Nasira's Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <!-- Hidden fields -->
+      <input type="hidden" name="_subject" value="New message from your portfolio!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
 
-  <section id="about" class="slide">
-    <h2>About Me</h2>
-    <p>Welcome to my portfolio! I'm Nasira, a budding web developer passionate about learning new technologies.</p>
-  </section>
-
-  <section id="projects" class="slide">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Grid-based Problem Solving</h3>
-      <p>Minimum moves required from source to destination using specific rules.</p>
-    </div>
-    <div class="project">
-      <h3>DT Project-based Learning</h3>
-      <p>A concept for first-year students combining coding, leadership, and business strategy.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="contact-section slide">
-    <h2>Contact Me</h2>
-    <div class="container">
-      <form action="https://formsubmit.co/el/joyuko" method="POST">
-        <!-- Optional settings -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New message from portfolio!">
-        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-
-        <div class="form-group">
-          <div class="form-row">
-            <div class="col">
-              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-            </div>
-            <div class="col">
-              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" class="form-control" rows="10" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Nasira. All rights reserved.</p>
-  </footer>
-
+      <button type="submit" class="btn btn-dark">Submit Form</button>
+    </form>
+  </div>
 </body>
 </html>
