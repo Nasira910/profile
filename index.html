@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Form</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-    .container {
-      max-width: 600px;
-      margin-top: 50px;
-      padding: 30px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    button {
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasira's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Contact Me</h1>
-    <form action="https://formsubmit.co/nasira2433@gmail.com" method="POST">
-      <div class="form-group">
-        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-      </div>
-      <div class="form-group">
-        <textarea name="message" class="form-control" placeholder="Your Message" rows="6" required></textarea>
-      </div>
 
-      <!-- Hidden fields -->
-      <input type="hidden" name="_subject" value="New message from your portfolio!">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+    <header>
+        <h1>Nasira's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <button type="submit" class="btn btn-dark">Submit Form</button>
-    </form>
-  </div>
+    <!-- Fullscreen About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="profile-container">
+            <img src="images/my-photo.jpg" alt="Nasira's Photo" class="profile-photo">
+            <div class="bio">
+                <p>Welcome to my portfolio! I'm <b>Nasira</b>, a passionate web developer with a keen interest in building interactive and user-friendly websites.</p>
+                <p>I have experience in HTML, CSS, JavaScript, Python, and SQL and have worked on various projects involving problem-solving, UI/UX design, and data handling. Currently, I am exploring full-stack development and digital marketing strategies to enhance my skill set.</p>
+                <p>Beyond coding, I contribute to InAmigos Foundation, writing about education, women empowerment, and sustainability.</p>
+                <p>Let's create something amazing together! 🚀</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Grid-based Problem-Solving Task</h3>
+                <p>Optimizing movement in a grid-based system to determine the shortest path efficiently.</p>
+            </div>
+            <div class="project-card">
+                <h3>DT Project-based Learning Concept</h3>
+                <p>A learning model for first-year students integrating coding, business strategy, and leadership.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nasira. Designed with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+edit this one i am not getting mails 
