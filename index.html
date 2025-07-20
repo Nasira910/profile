@@ -61,7 +61,7 @@
     .contact-section {
       background: url('https://www.transparenttextures.com/patterns/cubes.png'), #000;
       color: white;
-      padding: 3rem 1rem;
+      padding: 2rem 0;
     }
 
     .container {
@@ -79,6 +79,12 @@
     .form-group {
       margin-bottom: 1.5rem;
       text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     input[type="text"],
@@ -105,7 +111,6 @@
       font-weight: bold;
       cursor: pointer;
       transition: background 0.3s ease;
-      width: 100%;
     }
 
     .submit-btn:hover {
@@ -136,47 +141,52 @@
 
   <section id="about" class="slide">
     <h2>About Me</h2>
-    <p>Welcome to my portfolio! I'm Nasira, a budding web developer passionate about learning new technologies.</p>
+    <p>Hello! I'm Nasira, a budding web developer passionate about learning new technologies and creating impactful digital experiences.</p>
   </section>
 
   <section id="projects" class="slide">
     <h2>Projects</h2>
     <div class="project">
-      <h3>Grid-based problem-solving task</h3>
-      <p>A project to find minimum moves in a matrix from source to destination.</p>
+      <h3>Blood Cell Classification</h3>
+      <p>Using transfer learning to classify blood cell images. [<a href="https://github.com/Nasira19/blood-cell-classification" target="_blank">View on GitHub</a>]</p>
     </div>
     <div class="project">
-      <h3>DT Project-based learning concept</h3>
-      <p>An educational model combining coding, leadership, and behavioral development for first-year students.</p>
+      <h3>Smart Retail Cart System</h3>
+      <p>An IoT-based smart cart with Android app and Firebase for Walmart Sparkathon.</p>
     </div>
   </section>
 
   <section id="contact" class="contact-section">
     <div class="container">
       <h2>Contact Me</h2>
-      <form target="_blank" action="https://formsubmit.co/patannasira@gmail.com" method="POST">
+      <form target="_blank" action="https://formsubmit.co/nasira2433@gmail.com" method="POST">
+        <!-- Hidden field to set email subject -->
+        <input type="hidden" name="_subject" value="New message from Nasira's Portfolio">
+        <input type="hidden" name="_captcha" value="false">
+
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
         </div>
+
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
         </div>
+
         <div class="form-group">
-          <label for="message">Message</label>
-          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
         </div>
-        <!-- Optional hidden fields -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <button type="submit" class="submit-btn">Submit Form</button>
+
+        <button type="submit" class="submit-btn">Submit</button>
       </form>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Nasira. All rights reserved.</p>
+    <p>© 2025 Nasira. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
