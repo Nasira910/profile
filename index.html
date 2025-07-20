@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nasira's Portfolio</title>
   <style>
     * {
@@ -129,7 +129,7 @@
 <body>
 
   <header>
-    <h1>Nasira's Portfolio</h1>
+    <h1>Welcome to Nasira's Portfolio</h1>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -141,43 +141,50 @@
 
   <section id="about" class="slide">
     <h2>About Me</h2>
-    <p>Welcome to my portfolio! I'm Nasira, a budding web developer passionate about learning new technologies.</p>
+    <p>Hello! I'm Nasira, a budding web developer passionate about learning new technologies and solving real-world problems.</p>
   </section>
 
   <section id="projects" class="slide">
-    <h2>Projects</h2>
+    <h2>My Projects</h2>
     <div class="project">
-      <h3>Grid-based problem-solving task</h3>
-      <p>A project to find minimum moves in a matrix from source to destination.</p>
+      <h3>Grid-Based Problem Solver</h3>
+      <p>A Python-based solution to find optimal paths in a grid using specific movement rules.</p>
     </div>
     <div class="project">
-      <h3>DT Project-based learning concept</h3>
-      <p>An educational model combining coding, leadership, and behavioral development for first-year students.</p>
+      <h3>DT Learning Platform</h3>
+      <p>A content strategy project combining coding, behavioral science, and leadership for 1st-year students.</p>
     </div>
   </section>
 
   <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
     <div class="container">
-      <h2>Contact Me</h2>
       <form action="https://formsubmit.co/el/sibate" method="POST">
+        <!-- Required hidden inputs -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" required />
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
+
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="_subject" placeholder="Enter the subject" required>
+        </div>
+
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea name="message" id="message" required></textarea>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
         </div>
 
-        <!-- Hidden fields for configuration -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-
-        <button type="submit" class="submit-btn">Send</button>
+        <button type="submit" class="submit-btn">Send Message</button>
       </form>
     </div>
   </section>
@@ -185,5 +192,6 @@
   <footer>
     <p>&copy; 2025 Nasira. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
